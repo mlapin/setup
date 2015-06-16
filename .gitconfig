@@ -1,0 +1,25 @@
+[user]
+  name = Maksim Lapin
+  email = mlapin@mpi-inf.mpg.de
+
+[alias]
+  ca = commit -am
+  cm = commit -m
+  co = checkout
+  di = diff
+  fe = fetch
+  lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lola = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  me = merge
+  meom = merge origin/master
+  st = status
+  pu = push
+
+[color]
+  ui = true
+
+[core]
+  pager = less -FX
+
+[mergetool]
+  keepBackup = false
