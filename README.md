@@ -1,2 +1,2 @@
-# dotfiles
-My dotfiles
+# setup
+My common setup files

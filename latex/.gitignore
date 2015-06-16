@@ -1,0 +1,15 @@
+main*.pdf
+supplement*.pdf
+*.aux
+*.bbl
+*.blg
+*.brf
+*.dvi
+*.idx
+*.log
+*.lot
+*.lof
+*.out
+*.spl
+*.toc
+*.synctex.gz
