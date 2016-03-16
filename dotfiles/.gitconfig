@@ -16,13 +16,15 @@
   pu = push
 
 [color]
-  ui = true
+  ui = auto
 
 [core]
   pager = less -FX
+  editor = nano
+  autocrlf = input
 
 [mergetool]
   keepBackup = false
 
 [push]
-	default = simple
+  default = simple
