@@ -1,6 +1,12 @@
 [user]
   name = Maksim Lapin
-  email = mlapin@mpi-inf.mpg.de
+  email = maksiml@amazon.com
+
+[core]
+#  pager = less -FX
+  pager = less -FMRiX
+  editor = nano
+#  autocrlf = input
 
 [alias]
   ca = commit -am
@@ -8,6 +14,8 @@
   co = checkout
   di = diff
   fe = fetch
+  dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+  lol = log --graph --decorate --all
   lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
   me = merge
@@ -18,13 +26,12 @@
 [color]
   ui = auto
 
-[core]
-  pager = less -FX
-  editor = nano
-  autocrlf = input
-
 [mergetool]
   keepBackup = false
 
 [push]
   default = simple
+
+[amazon]
+  append-cr-url = false
+  pull-request-by-default = true
